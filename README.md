@@ -1,4 +1,2 @@
-# Random Number
-
-# lesson06
+# lesson06 hard
 # RandomNumberJS
