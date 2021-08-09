@@ -25,7 +25,7 @@ function yourNumber() {
   } else {
     confirm ("Введи число!");
   }
-  return yourNumber;
+  return yourNumber();
 }
 
 console.log(yourNumber());
