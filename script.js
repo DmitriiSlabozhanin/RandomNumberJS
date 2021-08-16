@@ -1,16 +1,20 @@
 'use strict';
 
-let randNumber = Math.floor(Math.random() * 101);
-    console.log(randNumber);
+let randNumber;
 
 function isNumber(num) {
     return !isNaN(parseFloat(num)) && isFinite(num);
   }
 
-function yourNumber() {
+  randNumber = Math.floor(Math.random() * 101);
+  console.log(randNumber);
+ 
+  function yourNumber() {
+
   let yourNum = prompt("Угадай число от 1 до 100");
   if (yourNum === null) {
     alert("Игра окончена");
+    return yourNum;
   } else if (isNumber(yourNum)) {
     yourNum = +yourNum;
 
@@ -28,4 +32,7 @@ function yourNumber() {
   return yourNumber();
 }
 
-console.log(yourNumber());
+let saveNumber = yourNumber();
+console.log(saveNumber());
+
+
